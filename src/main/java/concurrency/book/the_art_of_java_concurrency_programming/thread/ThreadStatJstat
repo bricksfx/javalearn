@@ -1,0 +1,154 @@
+2018-02-20 23:46:18
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.65-b01 mixed mode):
+
+"Attach Listener" #16 daemon prio=9 os_prio=31 tid=0x00007f95ce021800 nid=0x1107 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"DestroyJavaVM" #15 prio=5 os_prio=31 tid=0x00007f95ce01b800 nid=0x1a03 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"blocked===2-bricks" #14 prio=5 os_prio=31 tid=0x00007f95ce01a800 nid=0x5903 waiting on condition [0x000070000b27c000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at java.lang.Thread.sleep(Thread.java:340)
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386)
+	at concurrency.book.the_art_of_java_concurrency_programming.thread.SleepUtil.sleepSeconds(SleepUtil.java:11)
+	at concurrency.book.the_art_of_java_concurrency_programming.thread.ThreadState$Blocked.run(ThreadState.java:55)
+	- locked <0x000000076abe3e10> (a java.lang.Class for concurrency.book.the_art_of_java_concurrency_programming.thread.ThreadState$Blocked)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"blocked===1-bricks" #13 prio=5 os_prio=31 tid=0x00007f95ce01a000 nid=0x5803 waiting for monitor entry [0x000070000b179000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at concurrency.book.the_art_of_java_concurrency_programming.thread.ThreadState$Blocked.run(ThreadState.java:55)
+	- waiting to lock <0x000000076abe3e10> (a java.lang.Class for concurrency.book.the_art_of_java_concurrency_programming.thread.ThreadState$Blocked)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"waiting===bricks" #12 prio=5 os_prio=31 tid=0x00007f95ce016000 nid=0x5603 in Object.wait() [0x000070000b076000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x000000076abde520> (a java.lang.Class for concurrency.book.the_art_of_java_concurrency_programming.thread.ThreadState$Waiting)
+	at java.lang.Object.wait(Object.java:502)
+	at concurrency.book.the_art_of_java_concurrency_programming.thread.ThreadState$Waiting.run(ThreadState.java:41)
+	- locked <0x000000076abde520> (a java.lang.Class for concurrency.book.the_art_of_java_concurrency_programming.thread.ThreadState$Waiting)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"time_waiting====bricks" #11 prio=5 os_prio=31 tid=0x00007f95cd041800 nid=0xa703 waiting on condition [0x000070000af73000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at java.lang.Thread.sleep(Thread.java:340)
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386)
+	at concurrency.book.the_art_of_java_concurrency_programming.thread.SleepUtil.sleepSeconds(SleepUtil.java:11)
+	at concurrency.book.the_art_of_java_concurrency_programming.thread.ThreadState$TimeWaiting.run(ThreadState.java:31)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Monitor Ctrl-Break" #10 daemon prio=5 os_prio=31 tid=0x00007f95cd050000 nid=0xa903 runnable [0x000070000ae70000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at com.intellij.rt.execution.application.AppMain$1.run(AppMain.java:90)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Service Thread" #9 daemon prio=9 os_prio=31 tid=0x00007f95cd075000 nid=0x3d03 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread3" #8 daemon prio=9 os_prio=31 tid=0x00007f95cd06a800 nid=0x3a03 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread2" #7 daemon prio=9 os_prio=31 tid=0x00007f95cd816800 nid=0x3f03 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread1" #6 daemon prio=9 os_prio=31 tid=0x00007f95cb80a800 nid=0x4003 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" #5 daemon prio=9 os_prio=31 tid=0x00007f95cb805000 nid=0x4103 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=31 tid=0x00007f95cd040800 nid=0x360b runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" #3 daemon prio=8 os_prio=31 tid=0x00007f95cb011000 nid=0x4a03 in Object.wait() [0x000070000a658000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x000000076ab070b8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x000000076ab070b8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" #2 daemon prio=10 os_prio=31 tid=0x00007f95cc016800 nid=0x4b03 in Object.wait() [0x000070000a555000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x000000076ab06af8> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:157)
+	- locked <0x000000076ab06af8> (a java.lang.ref.Reference$Lock)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" os_prio=31 tid=0x00007f95cc016000 nid=0x4d03 runnable 
+
+"GC task thread#0 (ParallelGC)" os_prio=31 tid=0x00007f95cd00d000 nid=0x2107 runnable 
+
+"GC task thread#1 (ParallelGC)" os_prio=31 tid=0x00007f95cb003800 nid=0x2003 runnable 
+
+"GC task thread#2 (ParallelGC)" os_prio=31 tid=0x00007f95cb008000 nid=0x5403 runnable 
+
+"GC task thread#3 (ParallelGC)" os_prio=31 tid=0x00007f95cc011800 nid=0x2c03 runnable 
+
+"GC task thread#4 (ParallelGC)" os_prio=31 tid=0x00007f95cc012800 nid=0x5203 runnable 
+
+"GC task thread#5 (ParallelGC)" os_prio=31 tid=0x00007f95cc013000 nid=0x5003 runnable 
+
+"GC task thread#6 (ParallelGC)" os_prio=31 tid=0x00007f95cc013800 nid=0x4f03 runnable 
+
+"GC task thread#7 (ParallelGC)" os_prio=31 tid=0x00007f95cc014000 nid=0x2f03 runnable 
+
+"VM Periodic Task Thread" os_prio=31 tid=0x00007f95cb84b000 nid=0x3c03 waiting on condition 
+
+JNI global references: 21
+

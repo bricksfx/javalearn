@@ -1,0 +1,6 @@
+net.inet.ip.portrange.lowfirst: 1023
+net.inet.ip.portrange.lowlast: 600
+net.inet.ip.portrange.first: 49152
+net.inet.ip.portrange.last: 65535
+net.inet.ip.portrange.hifirst: 49152
+net.inet.ip.portrange.hilast: 65535
